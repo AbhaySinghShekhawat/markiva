@@ -25,8 +25,6 @@ export default function AboutMarkiva() {
       className="relative w-full py-16 lg:py-24 text-white "
     >
       <div className="container mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        
-        {/* Left Content */}
         <div className="text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
             About <span className="text-pink-400">Markiva</span>
@@ -42,8 +40,6 @@ export default function AboutMarkiva() {
             meaningful results through data-driven strategies and creative
             excellence.
           </p>
-
-          {/* Checklist */}
           <ul className="space-y-4 text-sm sm:text-base">
             {[
               "24/7 support available",
@@ -61,8 +57,6 @@ export default function AboutMarkiva() {
             ))}
           </ul>
         </div>
-
-        {/* Right Content (Features Cards) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
           {features.map((feature, idx) => (
             <div
@@ -71,13 +65,10 @@ export default function AboutMarkiva() {
                          bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg 
                          hover:scale-[1.03] hover:shadow-xl transition duration-300"
             >
-              {/* Icon */}
               <div className="w-14 h-14 flex items-center justify-center rounded-xl 
                               bg-gradient-to-tr from-pink-500 to-purple-600 shadow-md flex-shrink-0">
                 {feature.icon}
               </div>
-
-              {/* Text */}
               <div className="text-center sm:text-left">
                 <h3 className="text-lg sm:text-xl font-bold">{feature.title}</h3>
                 <p className="text-gray-300 text-sm sm:text-base mt-1">
@@ -87,7 +78,6 @@ export default function AboutMarkiva() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

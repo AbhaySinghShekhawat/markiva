@@ -42,7 +42,6 @@ export default function OurServices() {
 
   return (
     <section id="service" className="py-20 px-6 sm:px-10 lg:px-16 font-roboto">
-      {/* Heading */}
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
           Our{" "}
@@ -55,7 +54,6 @@ export default function OurServices() {
         </p>
       </div>
 
-      {/* Services Grid */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <div
@@ -64,20 +62,16 @@ export default function OurServices() {
              shadow-inner hover:shadow-[inset_20px_0_40px_rgba(236,72,153,0.6),inset_0_0_40px_rgba(147,51,234,0.6),inset_-20px_0_40px_rgba(59,130,246,0.6)]
              transition-all duration-500 group flex flex-col justify-between"
           >
-            {/* Icon */}
             <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${service.btnColor} flex items-center justify-center mb-6`}>
               {service.icon}
             </div>
 
-            {/* Title */}
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
               {service.title}
             </h3>
 
-            {/* Description */}
             <p className="text-gray-300 mb-6 text-sm sm:text-base">{service.desc}</p>
 
-            {/* Button */}
             <button
               className={`px-5 py-2.5 rounded-full bg-gradient-to-r ${service.btnColor} text-white font-medium shadow-md hover:scale-105 transition-transform`}
             >
@@ -87,7 +81,6 @@ export default function OurServices() {
         ))}
       </div>
 
-      {/* CTA Button */}
       <div className="mt-12 flex items-center justify-center">
         <button className="px-6 sm:px-8 py-3 text-base sm:text-lg text-white rounded-full font-bold
                      bg-gradient-to-r from-pink-500 to-purple-600 

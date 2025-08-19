@@ -38,8 +38,6 @@ export default function GetinTouch() {
       className="w-full py-16 px-6 md:px-12 lg:px-20 "
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        
-        {/* Left Side - Contact Info */}
         <div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
             Let’s Start a Conversation
@@ -73,13 +71,11 @@ export default function GetinTouch() {
           </div>
         </div>
 
-        {/* Right Side - Contact Form */}
         <div className="bg-white/10 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-lg">
           <h3 className="text-2xl font-bold text-white mb-6">
             Send Us a Message
           </h3>
           <form className="space-y-4">
-            {/* Name + Email */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
@@ -95,7 +91,6 @@ export default function GetinTouch() {
               />
             </div>
 
-            {/* Phone + Services */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="tel"
@@ -113,7 +108,6 @@ export default function GetinTouch() {
               </select>
             </div>
 
-            {/* Message Box */}
             <textarea
               placeholder="Project Details"
               className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-gray-300 
@@ -121,7 +115,6 @@ export default function GetinTouch() {
               rows="5"
             ></textarea>
 
-            {/* Button */}
             <button
               type="submit"
               className="w-full py-3 rounded-lg bg-gradient-to-r from-pink-500 to-purple-600 

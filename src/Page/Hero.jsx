@@ -5,11 +5,9 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="mt-4 relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden"
+      className="pt-16 sm:pt-[200px] relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden"
     >
       <div className="container mx-auto px-6 md:px-12 text-center">
-        
-        {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
           <span className="bg-gradient-to-r from-pink-600 to-purple-500 to-blue-400 bg-clip-text text-transparent">
             Markiva
@@ -18,13 +16,11 @@ function Hero() {
           That Drives Results
         </h1>
 
-        {/* Subheading */}
         <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-2">
           We help businesses grow with cutting-edge digital marketing strategies,
           creative design, and powerful web development solutions.
         </p>
 
-        {/* Button */}
         <div className="mt-6 sm:mt-8">
           <button
             className="px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold 
@@ -36,10 +32,7 @@ function Hero() {
           </button>
         </div>
 
-        {/* Stats Section */}
         <div className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
-          
-          {/* Card 1 */}
           <div className="p-6 rounded-2xl border border-white/10 
                         bg-white/10 backdrop-blur-md 
                         hover:bg-gradient-to-r hover:from-pink-600/90 hover:via-purple-500/90 hover:to-blue-400/90 
@@ -51,7 +44,6 @@ function Hero() {
             <p className="text-gray-200 text-sm sm:text-base">Happy Clients</p>
           </div>
 
-          {/* Card 2 */}
           <div className="p-6 rounded-2xl border border-white/10 
                         bg-white/10 backdrop-blur-md 
                         hover:bg-gradient-to-r hover:from-pink-600/90 hover:via-purple-500/90 hover:to-blue-400/90 
@@ -63,7 +55,6 @@ function Hero() {
             <p className="text-gray-200 text-sm sm:text-base">Success Rate</p>
           </div>
 
-          {/* Card 3 */}
           <div className="p-6 rounded-2xl border border-white/10 
                         bg-white/10 backdrop-blur-md 
                         hover:bg-gradient-to-r hover:from-pink-600/90 hover:via-purple-500/90 hover:to-blue-400/90 
