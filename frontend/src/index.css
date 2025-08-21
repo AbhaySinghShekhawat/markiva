@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @apply bg-zinc-900 text-zinc-100 h-[200vh] font-sans antialiased;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(
+    to bottom,
+    #ec4899,     
+    #8b5cf6,     
+    #3b82f6      
+  );
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(
+    to right,    
+    #ec4899,     
+    #8b5cf6,     
+    #3b82f6      
+  );
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.9;
+}
+.Toastify__toast-container--top-right {
+  top: 0 !important;
+  right: 0 !important;
+}
